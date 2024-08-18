@@ -1,3 +1,6 @@
+import React from 'react';
+import classes from './BookList.module.css';
+
 export default function BookList() {
    let pageTitle = "Book List";
    let book1 = "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781368104807_p0_v17%5D&call=url%5Bfile:common/decodeProduct.chain%5D";
@@ -5,11 +8,11 @@ export default function BookList() {
    let book3 = "https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780593899564_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D";
 
    return (
-      <div>
+      <div className={classes.bookSection}>
          <h3>{pageTitle}</h3>
-         <img src={book1} alt="The Book of Bill" />
-         <img src={book2} alt="The Adventure Zone" />
-         <img src={book3} alt="Kiki's Delivery Service" />
+         <img src={book1} alt="The Book of Bill" className={classes.bookImage}/>
+         <img src={book2} alt="The Adventure Zone" className={classes.bookImage}/>
+         <img src={book3} alt="Kiki's Delivery Service" className={classes.bookImage}/>
       </div>      
    );
 }
