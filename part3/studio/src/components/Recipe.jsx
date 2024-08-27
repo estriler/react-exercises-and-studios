@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://www.pinterest.com/bakerbynature/";
+   let authorPhoto = "https://bakerbynature.com/wp-content/uploads/2021/06/ashley.jpeg";
+   let authorName = "Ashley Manila";
 
    return (
       <div>
@@ -17,7 +17,7 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ["chocolate", "cream cheese", "sugar", "cocoa powder", "heavy cream"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -36,8 +36,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>Ultimate Chocolate Cheesecake</h1>
+            <p>This Ultimate Chocolate Cheesecake features a chocolate cookie crust, creamy chocolate cheesecake filling, chocolate ganache, and shaved chocolate! Made with basic ingredients you probably have in your kitchen right now. Simply put, this is the best chocolate cheesecake recipe you’ll ever try!</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -49,7 +49,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://bakerbynature.com/wp-content/uploads/2019/04/Ultimate-Chocolate-Cheesecake.jpg" alt="Ultimate Chocolate Cheesecake" className="imageUpdates"/>
    );
 }
 
